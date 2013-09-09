@@ -70,26 +70,40 @@ set shiftwidth=4
 set autoindent
 set cindent
 
+
 " 设置默认窗口大小
 "set lines=30 columns=100
+
 
 " 颜色主题设置
 colorscheme  desert
 
+
 " 关闭gvim 的工具栏
 set go =
 
+
 " 字体设置
 set guifont=Courier\_New:h12:w6
+
 
 " 设置maplead键从\到,
 let mapleader=","
 let g:mapleader=","
 
+
 " 高亮显示光标所在行
 "set cursorline
 "hi cursorline guibg=#222222
 "hi CursorColumn guibg=#333333
+
+
+" 光标在物理行间移动，即长行换行
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
 
 "状态栏显示文件名
 set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
