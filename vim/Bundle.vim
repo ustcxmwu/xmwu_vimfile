@@ -18,13 +18,16 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'aperezdc/vim-template'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'vim-scripts/L9'
+Bundle 'vim-scripts/SuperTab'
+Bundle 'vim-scripts/FuzzyFinder'
 
 
 
 "格式2：vim-scripts里面的仓库，直接打仓库名即可。
-Bundle 'SuperTab'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'SuperTab'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
 
 "格式3：非Github的Git仓库
 "Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
