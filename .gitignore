@@ -1,0 +1,14 @@
+./vim/bundle/neocomplcache.vim/.git
+./vim/bundle/vim-colorschemes/.git
+./vim/bundle/vundle/.git
+./vim/bundle/gcstl/.git
+./vim/bundle/SuperTab/.git
+./vim/bundle/vim-autoclose/.git
+./vim/bundle/nerdcommenter/.git
+
+./vim/bundle/neocomplcache.vim/.gitignore
+./vim/bundle/vim-colorschemes/.gitignore
+./vim/bundle/vundle/.gitignore
+./vim/bundle/vim-autoclose/.gitignore
+./vim/bundle/nerdcommenter/.gitignore
+
