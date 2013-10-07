@@ -1,3 +1,16 @@
 The vim configure file of xmwu.
+1. 新建vim-config文件夹
+2. 在vim-config文件夹下执行
+	git init
+	git remote add origin https://github.com/ustcxmwu/xmwu_vimfile.git
+	git pull
+3. 为配置文件创建软链接，在用户目录下执行
+	ln -s vim-config/vim .vim
+	ln -s vim-config/vimrc .vimrc
+4. 安装vundle
+	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+5. 打开一个vim文档，输入
+	:BundleInstall!
 
-$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+	enjoy!
