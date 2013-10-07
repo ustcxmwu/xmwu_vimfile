@@ -3,7 +3,7 @@ The vim configure file of xmwu.
 2. 在vim-config文件夹下执行
 	git init
 	git remote add origin https://github.com/ustcxmwu/xmwu_vimfile.git
-	git pull
+	git pull origin master
 3. 为配置文件创建软链接，在用户目录下执行
 	ln -s vim-config/vim .vim
 	ln -s vim-config/vimrc .vimrc
