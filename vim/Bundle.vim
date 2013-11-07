@@ -79,6 +79,7 @@ let g:supertabdefaultcompletionType = "<C-X><C-U>"
 let g:username = "wuxiaomin"
 let g:email = "xmwu@mail.ustc.edu.cn"
 let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
+let g:template_dir = "./my_templates"
 
 "-------------------------------------------------------------------------------
 "							NeoComplCache									   "
