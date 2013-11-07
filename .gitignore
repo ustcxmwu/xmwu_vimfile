@@ -1,4 +1,8 @@
-./vim/bundle/vundle/
+#./vim/bundle/vundle/
+./vim/bundle/vundle/.git
+./vim/bundle/vundle/.gitignore
+
+
 
 ./vim/bundle/neocomplcache.vim/.git
 ./vim/bundle/vim-colorschemes/.git
