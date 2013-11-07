@@ -1,30 +1,56 @@
-"vundle 管理插件"
+" ============================================================================ "
+"							vundle 管理插件									   "
+" ============================================================================ "
 set nocompatible " be iMproved
 filetype off " required!
+
+" ============================================================================ "
+"	指定要安装得插件
+" ============================================================================ "
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-"指定要安装得插件
-"使用Vundle来管理Vundle，这个必须要有。
+
+" ============================================================================ "
+"	使用Vundle来管理Vundle，这个必须要有。
+" ============================================================================ "
 Bundle 'gmarik/vundle'
-"接下来是要安装的插件
-"格式1：Github上其他用户的仓库（非vim-scripts账户里的仓库，所以要加Github用户名）
+
+" ============================================================================ "
+"	格式1：Github上其他用户的仓库（非vim-scripts账户里的仓库，所以要加Github用户名）
+" ============================================================================ "
+" Generic Standard Template Library for C "
+Bundle 'chuckination/gcstl'
+
+" Vim plugin for intensely orgasmic commenting "
+Bundle 'scrooloose/nerdcommenter'
+
+" Simple templates plugin for Vim "
+Bundle 'aperezdc/vim-template'
+
+" Ultimate auto-completion system for Vim. "
+Bundle 'Shougo/neocomplcache.vim'
+
+" one colorscheme pack to rule them all! "
+Bundle 'flazz/vim-colorschemes'
+
+" Vim-script library "
+Bundle 'vim-scripts/L9'
+
+" Perform all your vim insert mode completions with Tab. "
+Bundle 'ervandew/supertab'
+
+" buffer/file/command/tag/etc explorer with fuzzy matching. "
+Bundle 'vim-scripts/FuzzyFinder'
+
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'Shougo/neocomplcache'
-Bundle 'chuckination/gcstl'
 "Bundle 'Townk/vim-autoclose'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'aperezdc/vim-template'
-Bundle 'Shougo/neocomplcache.vim'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'vim-scripts/L9'
-Bundle 'vim-scripts/SuperTab'
-Bundle 'vim-scripts/FuzzyFinder'
 
-
-
-"格式2：vim-scripts里面的仓库，直接打仓库名即可。
+" ============================================================================ "
+"	格式2：vim-scripts里面的仓库，直接打仓库名即可。
+" ============================================================================ "
 "Bundle 'SuperTab'
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
@@ -32,10 +58,15 @@ Bundle 'vim-scripts/FuzzyFinder'
 "格式3：非Github的Git仓库
 "Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 
-"文件类型检测
+" ============================================================================ "
+"	文件类型检测
+" ============================================================================ "
 filetype plugin indent on
 
-"启动插件
+" ============================================================================ "
+"	启动插件
+" ============================================================================ "
+
 "-------------------------------------------------------------------------------
 "							SuperTab										   "
 "-------------------------------------------------------------------------------
