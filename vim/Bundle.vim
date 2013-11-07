@@ -72,11 +72,13 @@ filetype plugin indent on
 "-------------------------------------------------------------------------------
 let g:SuperTabRetainCompletiontype = 2
 let g:supertabdefaultcompletionType = "<C-X><C-U>"
+
 "-------------------------------------------------------------------------------
 "							vim-template                                       "
 "-------------------------------------------------------------------------------				
 let g:username = "wuxiaomin"
 let g:email = "xmwu@mail.ustc.edu.cn"
+let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
 
 "-------------------------------------------------------------------------------
 "							NeoComplCache									   "
