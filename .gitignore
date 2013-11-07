@@ -1,4 +1,13 @@
 #./vim/bundle/vundle/
+#
+#
+
+
+tags
+tags-ja
+
+
+
 ./vim/bundle/vundle/.git/
 ./vim/bundle/vundle/.gitignore
 
