@@ -43,6 +43,16 @@ Bundle 'ervandew/supertab'
 " buffer/file/command/tag/etc explorer with fuzzy matching. "
 Bundle 'vim-scripts/FuzzyFinder'
 
+" Alternate Files quickly (.c --> .h etc. "
+Bundle 'vim-scripts/a.vim'
+
+" A tree explorer plugin for vim. "
+Bundle 'scrooloose/nerdtree'
+
+" Help folks to align text, eqns, declarations, tables, etc. "
+Bundle 'vim-scripts/Align'
+
+
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'Shougo/neocomplcache'
@@ -80,6 +90,13 @@ let g:username = "wuxiaomin"
 let g:email = "xmwu@mail.ustc.edu.cn"
 let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
 let g:template_dir = "./my_templates"
+
+"-------------------------------------------------------------------------------				
+"							NERDTree										   "
+"-------------------------------------------------------------------------------				
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 
 "-------------------------------------------------------------------------------
 "							NeoComplCache									   "
