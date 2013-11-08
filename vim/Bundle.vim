@@ -52,6 +52,9 @@ Bundle 'scrooloose/nerdtree'
 " Help folks to align text, eqns, declarations, tables, etc. "
 Bundle 'vim-scripts/Align'
 
+" Simplify Doxygen documentation in C, C++, Python. "
+"Bundle 'vim-scripts/DoxygenToolkit.vim'
+
 
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails.git'

@@ -1,7 +1,7 @@
 /*
- * %FFILE%
- * Author:	%USER% <%MAIL%>
- * Date:	%FDATE%	
+ * File   : %FFILE%
+ * Author : %USER% <%MAIL%>
+ * Date   : %FDATE%
  *
  * %LICENSE%
  */

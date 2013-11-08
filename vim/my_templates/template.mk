@@ -1,10 +1,10 @@
 ################################################################################
-# Filename:		%FFILE%
-# Author: 		%USER% <%MAIL%>
-# Description:	the makefile of this project
+# Filename    : %FFILE%
+# Author      : %USER% <%MAIL%>
+# Description : the makefile of this project
 #
-# Date: 		%FDATE%
-# 
+# Date        : %FDATE%
+#
 # %LICENSE%
 ################################################################################
 
