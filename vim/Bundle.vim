@@ -26,7 +26,7 @@ Bundle 'chuckination/gcstl'
 Bundle 'scrooloose/nerdcommenter'
 
 " Simple templates plugin for Vim "
-Bundle 'aperezdc/vim-template'
+"Bundle 'aperezdc/vim-template'
 
 " Ultimate auto-completion system for Vim. "
 Bundle 'Shougo/neocomplcache.vim'
@@ -53,7 +53,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/Align'
 
 " Simplify Doxygen documentation in C, C++, Python. "
-"Bundle 'vim-scripts/DoxygenToolkit.vim'
+Bundle 'vim-scripts/DoxygenToolkit.vim'
 
 
 "Bundle 'tpope/vim-fugitive'
@@ -100,6 +100,15 @@ let g:template_dir = "~/.vim/my_templates"
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+"-------------------------------------------------------------------------------
+"							DoxygenToolkit									   "
+"-------------------------------------------------------------------------------
+let g:DoxygenToolkit_authorName="xmwu <xmwu@mail.ustc.edu.cn>"
+let g:DoxygenToolkit_briefTag_structName = "yes"
+let g:DoxygenToolkit_briefTag_funcName = "yes"
+let s:licenseTag = "Copyright (C) Advanced Network Management and Control Group of USTC\<enter>"
+let s:licenseTag = s:licenseTag."All right reserved."
+let g:DoxygenToolkit_licenseTag = s:licenseTag
 
 "-------------------------------------------------------------------------------
 "							NeoComplCache									   "
