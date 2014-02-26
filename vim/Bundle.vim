@@ -26,7 +26,7 @@ Bundle 'chuckination/gcstl'
 Bundle 'scrooloose/nerdcommenter'
 
 " Simple templates plugin for Vim "
-"Bundle 'aperezdc/vim-template'
+" Bundle 'aperezdc/vim-template'
 
 " Ultimate auto-completion system for Vim. "
 Bundle 'Shougo/neocomplcache.vim'
@@ -55,6 +55,14 @@ Bundle 'vim-scripts/Align'
 " Simplify Doxygen documentation in C, C++, Python. "
 Bundle 'vim-scripts/DoxygenToolkit.vim'
 
+" Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc) "
+Bundle 'vim-scripts/taglist.vim'
+
+" vim-latex-suite " 
+""Bundle 'grew/vim-latex-suite'
+
+" vim-latex "
+Bundle 'jcf/vim-latex'
 
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails.git'
@@ -89,10 +97,10 @@ let g:supertabdefaultcompletionType = "<C-X><C-U>"
 "-------------------------------------------------------------------------------
 "							vim-template                                       "
 "-------------------------------------------------------------------------------				
-let g:username = "wuxiaomin"
-let g:email = "xmwu@mail.ustc.edu.cn"
-let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
-let g:template_dir = "~/.vim/my_templates"
+""let g:username = "wuxiaomin"
+""let g:email = "xmwu@mail.ustc.edu.cn"
+""let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
+""let g:template_dir = "~/.vim/my_templates"
 
 "-------------------------------------------------------------------------------				
 "							NERDTree										   "
@@ -103,12 +111,31 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "-------------------------------------------------------------------------------
 "							DoxygenToolkit									   "
 "-------------------------------------------------------------------------------
-let g:DoxygenToolkit_authorName="xmwu <xmwu@mail.ustc.edu.cn>"
+let g:DoxygenToolkit_authorName="wuxiaomin <xmwu@mail.ustc.edu.cn>"
 let g:DoxygenToolkit_briefTag_structName = "yes"
 let g:DoxygenToolkit_briefTag_funcName = "yes"
 let s:licenseTag = "Copyright (C) Advanced Network Management and Control Group of USTC\<enter>"
 let s:licenseTag = s:licenseTag."All right reserved."
 let g:DoxygenToolkit_licenseTag = s:licenseTag
+
+"-------------------------------------------------------------------------------
+"							ctags											   "
+"-------------------------------------------------------------------------------
+let Tlist_Ctags_Cmd = '/usr/bin/ctags'
+
+
+
+"-------------------------------------------------------------------------------
+"							taglist											   "
+"-------------------------------------------------------------------------------
+let Tlist_Use_Right_Window = 1
+let Tlist_Exit_OnlyWindow = 1
+""let Tlist_Show_One_File = 1
+""let Tlist_File_Fold_Auto_Close = 1
+""set tags = tags
+""set autochdir 
+
+
 
 "-------------------------------------------------------------------------------
 "							NeoComplCache									   "
