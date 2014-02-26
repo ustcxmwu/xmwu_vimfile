@@ -105,6 +105,7 @@ let g:supertabdefaultcompletionType = "<C-X><C-U>"
 "-------------------------------------------------------------------------------				
 "							NERDTree										   "
 "-------------------------------------------------------------------------------				
+let g:NERDTreeWinSize = 20
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <C-n> :NERDTreeToggle<CR>
@@ -112,7 +113,11 @@ map <C-n> :NERDTreeToggle<CR>
 "-------------------------------------------------------------------------------
 "							DoxygenToolkit									   "
 "-------------------------------------------------------------------------------
-let g:DoxygenToolkit_authorName="wuxiaomin <xmwu@mail.ustc.edu.cn>"
+let g:DoxygenToolkit_authorName = "wuxiaomin <xmwu@mail.ustc.edu.cn>"
+let g:DoxygenToolkit_blockHeader = "--------------------------------------------
+			\------------------------------------"
+let g:DoxygenToolkit_blockFooter = "--------------------------------------------
+			\------------------------------------"
 let g:DoxygenToolkit_briefTag_structName = "yes"
 let g:DoxygenToolkit_briefTag_funcName = "yes"
 let s:licenseTag = "Copyright (C) Advanced Network Management and Control Group of USTC\<enter>"
