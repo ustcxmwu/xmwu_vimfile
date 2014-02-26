@@ -107,6 +107,7 @@ let g:supertabdefaultcompletionType = "<C-X><C-U>"
 "-------------------------------------------------------------------------------				
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <C-n> :NERDTreeToggle<CR>
 
 "-------------------------------------------------------------------------------
 "							DoxygenToolkit									   "
@@ -229,5 +230,3 @@ let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
-
