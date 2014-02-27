@@ -13,8 +13,6 @@ The vim configure file of xmwu.
 	:BundleInstall!
 
 6. 如果出现untracked 情况,则在子目录下建立子文件.gitignore, 里面输入
-	doc/tags
-	doc/tags-ja
-
+	./ingnorefilepath/ingnorefilename
 
 	enjoy!

@@ -72,7 +72,7 @@ set cindent
 
 
 " 设置默认窗口大小
-"set lines=30 columns=100
+set lines=30 columns=100
 
 
 " 颜色主题设置
