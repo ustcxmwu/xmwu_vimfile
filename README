@@ -1,5 +1,8 @@
+********************************************************************************
+****	Linux 下 vim 配置  
+********************************************************************************
 The vim configure file of xmwu.
-1. 新建vim-config文件夹
+1. 用户目录下新建vim-config文件夹
 2. 在vim-config文件夹下执行
 	git init
 	git remote add origin https://github.com/ustcxmwu/xmwu_vimfile.git
@@ -15,4 +18,47 @@ The vim configure file of xmwu.
 6. 如果出现untracked 情况,则在子目录下建立子文件.gitignore, 里面输入
 	./ingnorefilepath/ingnorefilename
 
-	enjoy!
+********************************************************************************
+****	win7 下 vim 配置
+********************************************************************************
+1. 安装 git
+	下载 msysgit 软件, 地址: http://msysgit.github.io/
+	以管理员身份选择安装.
+	测试安装是否成功
+		cmd 下输入: git --version
+	显示: git version 表示安装成功.
+2. 配置 github
+	git 安装目录下子文件夹 cmd 中, 建立名为 curl.cmd 的文件
+	在里面加入以下内容:
+			@rem Do not use "echo off" to not affect any child calls.
+			@setlocal
+
+			@rem Get the abolute path to the parent directory, which is assumed to be the
+			@rem Git installation root.
+			@for /F "delims=" %%I in ("%~dp0..") do @set git_install_root=%%~fI
+			@set PATH=%git_install_root%\bin;%git_install_root%\mingw\bin;%PATH% 
+
+			@if not exist "%HOME%" @set HOME=%HOMEDRIVE%%HOMEPATH%
+			@if not exist "%HOME%" @set HOME=%USERPROFILE%	
+
+			@curl.exe %*
+
+	测试 ctrl 安装成功, 在 git bash 中输入 ctrl --version
+	显示 ctrl version, 表示安装成功.
+3. 拷贝 vimrc 文件到用户文件夹 (C:\\users\name\) 下, 建立新文件夹命名为 .vim
+4. 安装vundle
+	git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+5. 打开一个vim文档，输入
+	:BundleInstall!
+
+********************************************************************************
+****	Vundle 基本命令
+********************************************************************************
+:BundleList 列出已经安装的插件
+:BundleInstall 安装所有配置文件中的插件
+:BundleInstall! 更新所有插件
+:BundleSearch 搜索插件
+:BundleClean! 根据配置文件删除插件
+
+
+	enjoy vim!
