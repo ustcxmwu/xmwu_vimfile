@@ -26,7 +26,7 @@ Bundle 'chuckination/gcstl'
 Bundle 'scrooloose/nerdcommenter'
 
 " Simple templates plugin for Vim "
-" Bundle 'aperezdc/vim-template'
+Bundle 'aperezdc/vim-template'
 
 " Ultimate auto-completion system for Vim. "
 Bundle 'Shougo/neocomplcache.vim'
@@ -64,6 +64,12 @@ Bundle 'vim-scripts/taglist.vim'
 " vim-latex "
 Bundle 'jcf/vim-latex'
 
+" C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc.
+Bundle 'vim-scripts/c.vim'
+
+" helps editing xml (and [x]html, sgml, xslt) files 
+Bundle 'othree/xml.vim'
+
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'Shougo/neocomplcache'
@@ -97,10 +103,10 @@ let g:supertabdefaultcompletionType = "<C-X><C-U>"
 "-------------------------------------------------------------------------------
 "							vim-template                                       "
 "-------------------------------------------------------------------------------				
-""let g:username = "wuxiaomin"
-""let g:email = "xmwu@mail.ustc.edu.cn"
-""let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
-""let g:template_dir = "~/.vim/my_templates"
+let g:username = "wuxiaomin"
+let g:email = "xmwu@mail.ustc.edu.cn"
+let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
+let g:template_dir = "~/vim/my_templates"
 
 "-------------------------------------------------------------------------------				
 "							NERDTree										   "
@@ -120,6 +126,11 @@ let g:DoxygenToolkit_authorName = "wuxiaomin <xmwu@mail.ustc.edu.cn>"
 ""			\------------------------------------"
 let g:DoxygenToolkit_briefTag_structName = "yes"
 let g:DoxygenToolkit_briefTag_funcName = "yes"
+
+let g:DoxygenToolkit_briefTag_pre = "@brief\t"
+let g:DoxygenToolkit_paramTag_pre = "@param\t"
+let g:DoxygenToolkit_returnTag = "@return\t"
+
 let s:licenseTag = "Copyright (C) Advanced Network Management and Control Group of USTC\<enter>"
 let s:licenseTag = s:licenseTag."All right reserved."
 let g:DoxygenToolkit_licenseTag = s:licenseTag
@@ -235,3 +246,14 @@ let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+"-------------------------------------------------------------------------------
+"						C.vim configure										   *
+"-------------------------------------------------------------------------------
+" linux custom templates config
+"let g:C_localTemplateFile = '~/.vim/c.vim.templates/Templates'
+" win custom templates config 
+let g:C_LocalTemplateFile=$HOME.'/.vim/c.vim.templates/Templates'
+
+let g:C_TemplateOverwrittenMsg = 'yes'
+let g:C_LineEndCommColDefault = 50 
