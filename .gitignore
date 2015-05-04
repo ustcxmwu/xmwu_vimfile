@@ -1,4 +1,8 @@
-#./vim/bundle/vundle/
+# vim-config 忽略文件
 
-.*
-vim/bundle
+/vim/bundle
+!/vim/bundle/vundle
+
+/vim/.netrwhist
+
+

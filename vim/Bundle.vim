@@ -65,7 +65,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'jcf/vim-latex'
 
 " C/C++ IDE -- Write and run programs. Insert statements, idioms, comments etc.
-Bundle 'vim-scripts/c.vim'
+""Bundle 'vim-scripts/c.vim'
 
 " helps editing xml (and [x]html, sgml, xslt) files 
 Bundle 'othree/xml.vim'
@@ -103,10 +103,14 @@ let g:supertabdefaultcompletionType = "<C-X><C-U>"
 "-------------------------------------------------------------------------------
 "							vim-template                                       "
 "-------------------------------------------------------------------------------				
+""let g:templates_plugin_loaded		"跳过加载插件"
+""let g:templates_no_autocmd		"创建文件时忽略使用模板"
+let g:templates_directory = "~/.vim/my_templates"
+"let g:templates_global_name_prefix = "template"
+let g:templates_name_prefix = "template"
 let g:username = "wuxiaomin"
 let g:email = "xmwu@mail.ustc.edu.cn"
 let g:license = "Copyright (C) Advanced Network Management and Control Group of USTC"
-let g:template_dir = "~/vim/my_templates"
 
 "-------------------------------------------------------------------------------				
 "							NERDTree										   "
@@ -253,7 +257,7 @@ let g:neocomplcache_omni_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " linux custom templates config
 "let g:C_localTemplateFile = '~/.vim/c.vim.templates/Templates'
 " win custom templates config 
-let g:C_LocalTemplateFile=$HOME.'/.vim/c.vim.templates/Templates'
+"let g:C_LocalTemplateFile=$HOME.'/.vim/c.vim.templates/Templates'
 
-let g:C_TemplateOverwrittenMsg = 'yes'
-let g:C_LineEndCommColDefault = 50 
+"let g:C_TemplateOverwrittenMsg = 'yes'
+"let g:C_LineEndCommColDefault = 50 
