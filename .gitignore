@@ -4,5 +4,6 @@
 !/vim/bundle/vundle
 
 /vim/.netrwhist
+/vim/.vim
 
 
